@@ -123,7 +123,8 @@ else {
     query => $cgi,
     type => "opac",
 	is_plugin => 1,
-    authnotrequired => ( C4::Context->preference("OpacPublic") ? 1 : 0 ),
+    #authnotrequired => ( C4::Context->preference("OpacPublic") ? 1 : 0 ),
+    authnotrequired => 0,
     }
 );
 if ($template_name eq 'opac-results.tt') {
